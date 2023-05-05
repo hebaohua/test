@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DJANGO- WELCOME</title>
+</head>
+<body>
+<h1>Welcome to the DJANGO Framework and Templates </h1>
+<h2>{{message}}</h2>
+<h3>{{age}}</h3>
+
+<h2>Number of Students {{number_of_students}}</h2>
+
+<h2>Students List</h2>
+{% for student in students %}
+    <h3><a href="/students/{{student.id}}"> {{student.fname}} {{student.lname}}</a></h3>
+{% endfor %}
+
+{% for i in fontsizes %}
+     <font face="Verdana" size="{{i}}">This is code based font size</font> </br>
+{% endfor %}
+</body>
+</html>
